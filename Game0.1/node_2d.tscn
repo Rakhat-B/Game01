@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://bhq37yaqxwc0k"]
+
+[ext_resource type="Texture2D" uid="uid://onwtwpooiskv" path="res://icon.svg" id="1_h6j77"]
+[ext_resource type="Texture2D" uid="uid://dtxnbvss6onoq" path="res://assets/crab_robot.png" id="2_ys7ky"]
+[ext_resource type="Script" path="res://code/crab_robotwalk.gd" id="3_uxbj5"]
+[ext_resource type="Texture2D" uid="uid://bv4tj5e1mrkjs" path="res://assets/Bullet.png" id="4_h3k22"]
+[ext_resource type="Script" path="res://code/bullet.gd" id="5_dvuej"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(399, 405)
+scale = Vector2(6.07813, 0.898437)
+texture = ExtResource("1_h6j77")
+
+[node name="CrabRobot" type="Sprite2D" parent="."]
+position = Vector2(120, 349)
+scale = Vector2(7.625, 4.28125)
+texture = ExtResource("2_ys7ky")
+script = ExtResource("3_uxbj5")
+
+[node name="Bullet" type="Sprite2D" parent="."]
+position = Vector2(-161, 481)
+scale = Vector2(0.429688, 0.21875)
+texture = ExtResource("4_h3k22")
+script = ExtResource("5_dvuej")
